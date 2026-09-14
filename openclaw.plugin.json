@@ -1,0 +1,20 @@
+{
+  "id": "grok-build-session-catalog",
+  "name": "Grok Build Session Catalog",
+  "description": "Opt-in, read-only discovery of local Grok Build sessions in the OpenClaw session catalog.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": false,
+        "description": "Expose local Grok Build sessions from ~/.grok/sessions."
+      }
+    },
+    "additionalProperties": false
+  },
+  "activation": {
+    "onConfigPaths": ["plugins.entries.grok-build-session-catalog.config.enabled"]
+  }
+}
