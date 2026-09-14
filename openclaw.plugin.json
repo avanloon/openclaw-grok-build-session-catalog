@@ -2,7 +2,7 @@
   "id": "grok-build-session-catalog",
   "name": "Grok Build Session Catalog",
   "description": "Opt-in, read-only discovery of local Grok Build sessions in the OpenClaw session catalog.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "configSchema": {
     "type": "object",
     "properties": {

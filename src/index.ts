@@ -24,7 +24,9 @@ export default definePluginEntry({
     if (!enabled(api.pluginConfig)) return;
 
     const provider: SessionCatalogProvider = {
-      id: "grok-build",
+      // Use the canonical xAI/Grok provider id so the Control UI renders its
+      // bundled Grok brand mark in the session-catalog section header.
+      id: "grok",
       label: "Grok Build",
       supportsProcessHomeIsolation: true,
       list: async (params) => {
